@@ -1,0 +1,133 @@
+cycle=['abc','xyz','asd','tyu']
+print(cycle[0].title())
+print(cycle[1].title())
+print(cycle[2].title())
+print(cycle[3].title())
+
+print("Hello Mr."+cycle[0].title())
+print("Hello Mr."+cycle[1].title())
+print("Hello Mr."+cycle[2].title())
+print("Hello Mr."+cycle[3].title())
+
+#modify elements in list
+name=['hana','eshal','honda']
+print(name)
+
+name[0]='car'
+print(name)
+
+#two ways of adding element to list
+#first way is by appending(last index pr add krna data ko)
+name.append('new data')
+print(name)
+#inserting elements in list
+name.insert(0,'first element')
+print(name)
+
+#removing elements from list
+#two ways i.e, by value or by index
+#by index
+#by del (no longer that data will be accessed)
+deletion=['honda','ymaha','suzuki']
+print(deletion)
+
+print(deletion[0])
+del deletion[0]
+
+print(deletion[0])
+print(deletion)
+
+#pop() to remove last data in list(removed data could be accessed after deletion)
+mydata=['first element','second element','third element']
+print(mydata)
+newdata=mydata.pop()
+print(newdata)
+print(mydata)
+#popping data from any index
+newone=mydata.pop(0)
+print(newone)
+
+print(mydata)
+
+#by value
+#remove
+motorcycle=['honda','yamaha','suzuki','ducati']
+print(motorcycle)
+
+element='yamaha'
+motorcycle.remove(element)
+print(motorcycle)
+print("i have remove "+element.title()+" element because it was too expensive")
+
+
+motorcycle.remove('honda')
+print(motorcycle)
+print(motorcycle[0])
+
+
+#organizing list
+#via sort() method to order them permanat
+order=['bmw','audi','toyota','subaru']
+
+order.sort(reverse=True)
+print(order)
+order.sort(reverse=False)
+print(str(order)+"\n")
+
+#for temporary sorting of list
+myorder=['wne','cwo','xhree','aour']
+
+print("\ntemporary sorted list "+str(sorted(myorder)))
+
+print("Again in orginal form "+str(myorder))
+
+#print list in reverse order
+new=['zebra','dog','cat','tiger']
+new.reverse()
+print(new)
+new.reverse()
+print(new)
+
+print(str(len(new))+"\n")
+
+
+#chpter4 working with lists
+#looping
+magician=['alic','david','corolina']
+for magic in magician:
+    print(magic)
+
+
+magics=['alisa','davida','corolinaa']
+for magi in magics:
+    print(magi.title()+" is great artist")
+print("i am impressed from you Ms."+str(magi.title()))
+
+
+
+#list of numbers
+number =list(range(1,5))
+print("list of numbers "+str(number)+"\n")
+
+even_number=list(range(2,11,2))
+print(str(even_number)+"\n")
+
+squares=[]
+for value in range(1,6):
+    square=value**2
+    squares.append(square)
+print(str(squares)+"\n")
+
+#list short hand...comprhension
+root=[val**2 for val in range(1,11)]
+print(root)
+
+baker=['bake','abc','xyz','asd']
+for bake in baker[1:3]:
+    print(bake.title()+" ")
+
+#tuple
+dimension=(2,300)
+
+for dimen in dimension:
+    print(dimen)
